@@ -5,7 +5,7 @@ const JWT_SECRET = "sanyasecrettoken";
 const fetchuser = (req, res, next) => {
   // Get user from jwt token
   const token = req.header('auth-token');
-  console.log('Received token:', token); // Add this line
+  // console.log('Received token:', token); // Add this line
   if (!token) {
     return res.status(401).send({ error: "Please authenticate using a valid token" });
   }

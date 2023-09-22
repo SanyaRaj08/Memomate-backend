@@ -14,6 +14,9 @@ router.get("/fetchallnotes", fetchuser, async (req, res) => {
     res.status(500).send("Server Error");
   }
 });
+
+
+
 //add a new note
 router.post(
   "/addnote",
